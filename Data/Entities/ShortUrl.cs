@@ -7,7 +7,7 @@ namespace Velox_Url.Data.Entities
         [Key]
         public long Id { get; set; }
         public required string OriginalUrl { get; set; }
-        public required string ShortCode { get; set; }
+        public required string ShortUrlCode { get; set; }
         public int ClickCount { get; set; } = 0;         
         public bool IsCustom { get; set; } = false;
     }
