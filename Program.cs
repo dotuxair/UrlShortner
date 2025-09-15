@@ -1,3 +1,5 @@
+using Velox_Url.Extensions;
+
 namespace Velox_Url
 {
     public class Program
@@ -9,6 +11,7 @@ namespace Velox_Url
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddVeloxUrlDbContext(builder.Configuration);
 
             var app = builder.Build();
 
