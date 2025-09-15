@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Velox_Url</RootNamespace>
+    <UserSecretsId>5a958791-7244-4ae0-a119-ed00fd73d859</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,7 +15,6 @@
     <Folder Include="Contracts\Requests\" />
     <Folder Include="Controllers\" />
     <Folder Include="Mappers\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Middlewares\" />
     <Folder Include="Logging\" />
     <Folder Include="Caching\" />
@@ -20,6 +22,16 @@
     <Folder Include="Services\Interfaces\" />
     <Folder Include="Shared\Enums\" />
     <Folder Include="Shared\Constants\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
   </ItemGroup>
 
 </Project>
