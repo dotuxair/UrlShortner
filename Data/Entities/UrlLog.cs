@@ -36,7 +36,7 @@ namespace Velox_Url.Data.Entities
         [Column("short_url_id")]
         public long ShortUrlId { get; set; }
 
-        [ForeignKey("ShortUrlId")]
+        [ForeignKey(nameof(ShortUrlId))]
         public ShortUrl? ShortUrl { get; set; }
     }
 }
