@@ -11,15 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts\Responses\" />
-    <Folder Include="Contracts\Requests\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Mappers\" />
     <Folder Include="Middlewares\" />
     <Folder Include="Logging\" />
     <Folder Include="Caching\" />
     <Folder Include="Validators\" />
-    <Folder Include="Services\Interfaces\" />
     <Folder Include="Shared\Enums\" />
     <Folder Include="Shared\Constants\" />
   </ItemGroup>
