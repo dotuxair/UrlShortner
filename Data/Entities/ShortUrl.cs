@@ -7,6 +7,8 @@ namespace Velox_Url.Data.Entities
     [Index(nameof(ShortUrlCode), IsUnique = true)]
     public class ShortUrl : BaseEntity
     {
+        [Key]
+        [Column("id")]
         public long Id { get; set; }
 
         [Required]
@@ -16,6 +18,11 @@ namespace Velox_Url.Data.Entities
         [Required]
         [Column("short_url_code")]
         public required string ShortUrlCode { get; set; }
+        [Column("click_count")]
+        public int ClickCount { get; set; } = 0;
+
+        [Column("is_custom")]
+        public bool IsCustom { get; set; } = false;
 
         [Column("last_used_at")]
         public DateTimeOffset? LastUsedAt { get; set; }
@@ -23,10 +30,6 @@ namespace Velox_Url.Data.Entities
         [Column("expired_at")]
         public DateTimeOffset? ExpiredAt { get; set; }
 
-        [Column("click_count")]
-        public int ClickCount { get; set; } = 0;
 
-        [Column("is_custom")]
-        public bool IsCustom { get; set; } = false;
     }
 }
