@@ -10,6 +10,7 @@ namespace Velox_Url.Data.Entities
         public DateTimeOffset? UpdatedAt { get; set; }
         [Column("is_deleted")]
         public bool IsDeleted { get; set; } = false;
+
         [Column("deleted_at")]
         public DateTimeOffset? DeletedAt { get; set; }
     }
