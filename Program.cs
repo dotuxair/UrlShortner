@@ -12,6 +12,7 @@ namespace Velox_Url
 
             builder.Services.AddControllers();
             builder.Services.AddVeloxUrlDbContext(builder.Configuration);
+            builder.Services.AddVeloxUrlServices();
 
             var app = builder.Build();
 
